@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokulan Website</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+#header{
+    background-image: url(tree.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+
+
+    color: white;
+    height: 120vh;
+
+    
+}
+
+
+.head h1{
+    color:rgb(253, 5, 100) ;
+    font-size: 330%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 25px;
+    
+    
+    
+    
+
+    
+    
+
+}
+
+.home{
+    color:rgb(248, 0, 41);
+}
+.head h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+    margin-left: 66px;
+    position: absolute;
+    margin-top: -43px;
+    
+    
+    
+    
+    
+}
+.head ul{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-left: 45%;
+    margin-top: -30px;
+    position: absolute;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 5px;
+
+}
+.head ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 50px;
+    right: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    align-items: center;
+  
+}
+.head ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+
+.head span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120%;
+    background: linear-gradient(45deg, #0e0000,rgb(253, 5, 100) );
+    border-radius: 15px;
+    transition: .5s;
+}
+.head li:nth-child(1):hover~span{
+    left: 0;
+}
+.head li:nth-child(2):hover~span{
+    left: 106px;
+}
+.head li:nth-child(3):hover~span{
+    left: 239px;
+}
+.head li:nth-child(4):hover~span{
+    left: 390px;
+}
+.head li:nth-child(5):hover~span{
+    left: 541px;
+}
+.head-name p{
+    position: absolute;
+    top: 28%;
+    left: 7%;
+    font-size: 50px;
+    text-shadow: 2px 10px 10px black;
+
+}
+.head-name h1{
+    position: absolute;
+    top: 38%;
+    left: 7%;
+    font-size: 70px;
+    text-shadow: 7px 7px 10px black;
+
+}
+.head-name nav{
+    margin-top: 20px;
+}
+.head-name span{
+    color: rgb(253, 5, 100) ;
+    text-shadow: 7px 7px 10px rgb(48, 4, 28);
+    font-size: 90px;
+}
+#about{
+    padding: 80px 0;
+    color: white;
+    background: linear-gradient(180deg ,rgb(2, 1, 1),black);
+    height: 130vh;
+    background-size: 100%;
+    
+    
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 40%;
+}
+
+.about-col-2{
+    flex-basis: 50%;
+}
+.para{
+    margin-left: 40px;
+    margin-top: 40%;
+    border: 1px solid white;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    line-height: 150%;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 7px rgb(0, 0, 0);
+    
+     
+}
+.about-col-1 span{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(243, 0, 113);
+    text-shadow: 1px 1px 3px rgb(46, 45, 45);
+    margin-left:140px;
+    position: absolute;
+    margin-top: 10%;
+    
+    
+}
+.tab-title{
+    display: flex;
+    position: absolute;
+    margin-left: .1%;
+    margin-top: 10%;
+    font-size: 50px;
+    
+    
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background:rgb(243, 0, 113);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+.tab-links:hover:after{
+    width: 100%;
+}
+.tab-links.active::after{
+    width: 50%;
+}
+
+.tab-content span{
+    color:rgb(255, 0, 106);
+    font-size: 18px;
+    font-weight: 900;
+    
+    
+    
+    
+    
+    
+
+}
+.tab-content li{
+    list-style: none;
+    
+}
+
+.sub{
+    color:white;
+    list-style: none;
+    letter-spacing: .5px;
+    
+    margin-left: 10%;
+    margin-top: 5px;
+    font-weight: 700;
+    text-shadow: 2px 2px 7px black;
+
+
+}
+.skill{
+    display: none;
+    position: absolute;
+    margin-top: 15%;
+
+}
+.tab-content-education{
+    display: none;
+    margin-left: 59%;
+    margin-top: 194px;
+    position: absolute;
+}
+.tab-content-education li{
+    list-style-type: none;
+    
+
+}
+.tab-content-education span{
+    padding-top:10px ;
+    color:rgb(255, 0, 106);
+    font-size: 18px;
+    font-weight: 900;
+    
+
+}
+.sub1{
+    margin-left: 70px;
+    margin-top: 20px;
+    letter-spacing: .5px;
+    color: rgb(227, 247, 246);
+    font-weight: 700;
+    text-shadow: 2px 2px 7px black;
+
+
+
+    
+}
+#services{
+    padding: 30px 0;
+    background: linear-gradient(180deg,black,rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    
+    background-size: 135%;
+    color: white;
+
+}
+.services-list{
+    border: 1px solid white;
+    display: flex;
+    width: 25%;
+    height: 15%;
+    margin-left: 5%;
+    margin-top: 6%;
+    padding-top: 5%;
+    padding-right: 3%;
+    padding-bottom: 7%;
+    padding-left: 3%;
+    margin-bottom: 10%;
+    border-radius: 50px;
+    background-color:rgb(22, 8, 14);
+    border: none;
+    transition: transform 0.5s,background-color 0.5s;
+}
+.services-list:hover{
+    background-color: rgb(87, 27, 0);
+    transform: translateY(-10px);
+}
+
+.services-list h2{
+    font-size: 27px;
+    padding-left: 36px;
+    padding-right: 0;
+    padding-bottom: 30px;
+    color: rgb(253, 5, 100);
+
+    
+}
+.services-list p{
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+.services-list a{
+    text-decoration: none;
+    color: blue;
+    padding-left: 28%;
+    font-size: 20px;
+    padding-top: 30px;
+}
+.services-list2{
+    border: 1px solid white;
+    display: flex;
+    width: 25%;
+    height: 50%;
+    margin-left: 37%;
+    margin-top: -48%;
+    padding-top: 5%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+    padding-left: 3%;
+    margin-bottom: 10%;
+    border-radius: 50px;
+    background-color:rgb(22, 8, 14);
+    border: none;
+    transition: transform 0.5s,background-color 0.5s;
+}
+.services-list2:hover{
+    background-color: rgb(87, 27, 0);
+    transform: translateY(-10px);
+}
+
+.services-list2 h2{
+    font-size: 27px;
+    padding-left: 30px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    color: rgb(253, 5, 100);
+
+    
+}
+.services-list2 p{
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+.services-list2 a{
+    text-decoration: none;
+    color: blue;
+    padding-left: 28%;
+    font-size: 20px;
+}
+.services-list3{
+    border: 1px solid white;
+    display: flex;
+    width: 25%;
+    height: 10%;
+    margin-left: 70%;
+    margin-top: -48%;
+    padding-top: 5%;
+    padding-right: 3%;
+    padding-bottom: 7%;
+    padding-left: 3%;
+    margin-bottom: 10%;
+    border-radius: 50px;
+    background: rgb(22, 8, 14);
+    border: none;
+    transition: transform 0.5s,background-color 0.5s;
+}
+.services-list3:hover{
+    background-color:rgb(87, 27, 0);
+    transform: translateY(-10px);
+}
+
+.services-list3 h2{
+    font-size: 27px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    color: rgb(253, 5, 100);
+    
+}
+.services-list3 p{
+    font-size: 18px;
+    padding-bottom: 35px;
+}
+.services-list3 a{
+    text-decoration: none;
+    color: blue;
+    padding-left: 28%;
+    font-size: 20px;
+}
+.container h1{
+    font-size: 60px;
+    margin-left: 34%;
+    margin-top: 5%;
+    color: rgb(253, 5, 100);
+    text-shadow: 7px 7px 20px rgb(85, 21, 58);
+    
+}
+.btn{
+    color: white;
+    text-decoration: none;
+    border: 2px solid rgb(253, 5, 100);
+    width: 20px;
+    height: 20px;
+    margin-left: 42%;
+    padding: 10px 30px;
+    transition:  background-color 0.5s;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.btn:hover{
+    background-color: rgb(253, 5, 100);
+}
+#contact{
+    background:linear-gradient(180deg,rgb(0, 0, 0),black);
+    color: white;
+    display: flex;
+}
+.social-icons img{
+    
+    filter: invert(1);
+    padding-right: 10px;
+    width: 40px;
+    
+
+    
+}
+.social-icons{
+    margin-left: 100px;
+    
+    
+}
+.contact-left h1{
+    position: ;
+    margin-left: 100px;
+    font-size: 50px;
+    margin-top: 30%;
+    padding-bottom: 10%;
+    color:  rgb(253, 5, 100);
+}
+.contact-left p{
+    font-size: 20px;
+}
+.contact-left p img{
+    filter: invert(9);
+    margin-left: 100px;
+    padding-right: 20px;
+    
+    
+}
+.contact-left p{
+    margin-bottom: 40px;
+
+}
+.bs{
+    height: 30px;
+    width: 130px;
+    margin-top: 40px;
+    margin-left: 140px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: none;
+    background:  rgb(253, 5, 100);
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.contact-right form{
+    width: 100%;
+    margin-left: 10px;
+    
+}
+form input,form textarea{
+    position: relative;
+    width: 60%;
+    border: 0;
+    outline: none;
+    background:white;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    margin-left: 450px;
+    top: -380px;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    
+}
+form button{
+    top: 3070px;
+    position: absolute;
+    right: 57%;
+    background:rgb(253, 5, 100) ;
+    border: none;
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    
+    
+}
+#contact h2{
+    position: absolute;
+    bottom: -450%;
+    left: 0%;
+    background: rgb(189, 183, 183);
+    width: 100%;
+    overflow: hidden;
+    padding-left: 25%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+}
+#contact h2 img{
+    width: 25px;
+    margin-top: 15px;
+}
+.hum{
+    display: none;
+}
+.head img{
+    display: none;
+}
+
+@media(max-width:700px){
+    body{
+        width: 375px;
+        height: 765px;
+    }
+    
+    .head ul{
+        display: block;
+        margin-top: 5%;
+        background-color:rgb(253, 5, 100) ;
+        width: 60%;
+        height: 90%;
+        right: -60%;
+        padding-left: 20%;
+        z-index: 1;
+        border-radius: 10px;
+        margin-top: -20px;
+        padding-top: 20px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    .head ul img{
+        display: block;
+        color: white;
+        position: absolute;
+        margin-left: -50px;
+        margin-top: 5px;
+    }
+    .head ul li{
+        padding-top: 20%;
+    }
+    .hum span{
+        position: absolute;
+        
+    }
+    .head span{
+        display: none;
+    }
+    .hum .step1{
+        
+        z-index: 1;
+        width: 20%;
+        height: 5%;
+        background: white;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .head img{
+        display: block;
+        position: absolute;
+        margin-top: -20px;
+        margin-left: 83%;
+        width: 25px;
+        filter: invert(1);
+
+    
+    }
+    #header{
+        background-size: cover;
+        width: 375px;
+        height: 765px;
+        
+        
+    }
+    .head h1{
+        font-size: 30px;
+    }
+    .head h2{
+        font-size: 18px;
+        margin-left: 49px;
+        margin-top: -25px;
+    }
+    .head-name p{
+        font-size: 30px;
+
+    }
+    .head-name h1{
+        font-size: 40px;
+    }
+    .head-name h1 span{
+        font-size: 60px;
+    }
+    #about{
+        margin-top: -280px;
+        
+    }
+    .about-col-1{
+        flex-basis: 100%;
+        overflow: hidden;
+    }
+    .about-col-1 span{
+        font-size: 50px;
+        margin-left: 80px;
+    }
+    .para{
+        font-size: 14px;
+        margin-right: 5px;
+        width: 80%;
+        margin-top: 130px;
+        margin-left: 40px;
+
+    }
+    .tab-links{
+        font-size: 24px;
+        margin-left: 54px;
+    }
+    .tab-content{
+        margin-top: 100px;
+    }
+    
+   .tab-content  span{
+    font-size: 15px;
+    margin-left: -17px;
+    margin-top: 20px;
+    
+
+   }
+   .tab-content li{
+    font-size: 12px;
+    padding-top: -90px;
+    margin-left: 90px;
+   }
+  
+   .tab-content-education{
+    margin-top: 630px;
+    margin-left: 100px;
+
+   }
+   .tab-content-education span{
+    font-size: 15px;
+   }
+   .tab-content-education li{
+    font-size: 12px;
+   }
+   #services{
+    padding-top: 400px;
+
+    
+   }
+   .container h1{
+    font-size: 40px;
+    margin-left: 80px;
+   }
+   .services-list{
+    margin-left: 50px;
+    width: 70%;
+    
+   }
+   .services-list h2{
+    font-size: 20px;
+    margin-left: 40px;
+    
+   }
+   .services-list p{
+    font-size: 18px;
+
+    padding-left: 50px;
+    padding-right: 30px;
+   }
+   .services-list a{
+    font-size: 15px;
+    padding-left: 33%;
+}
+
+    .services-list2{
+        margin-top: 90px;
+        width: 70%;
+        margin-left: 50px;
+
+    }
+    .services-list2 h2{
+        font-size: 20px;
+        margin-left: 40px;
+        
+    }
+    .services-list2 p{
+        font-size: 18px;
+
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-top: 15px;
+    }
+    .services-list2 a{
+        font-size: 15px;
+        padding-left: 33%;
+    }
+    .services-list3{
+        margin-top: 90px;
+        width: 70%;
+        margin-left: 50px;
+        
+
+    }
+    .services-list3 h2{
+        font-size: 20px;
+        margin-left: 40px;
+        
+    }
+    .services-list3 p{
+        font-size: 18px;
+
+        padding-left: 50px;
+        padding-right: 30px;
+        padding-top: 15px;
+    }
+    .services-list3 a{
+        font-size: 15px;
+        padding-left: 33%;
+    }
+    #contact{
+        padding-top: 100px;
+        display: block;
+        overflow: hidden;
+        background-size: cover;
+        
+        
+    }
+    #contact h2 {
+        font-size: 12px;
+        margin-top: 20%;
+        padding-left: 20px;
+        padding-top: 4px;
+        
+        bottom: -4050px;
+    }
+    #contact h2 img{
+        width: 12px;
+        
+    }
+    #contact button{
+        margin-top: 10%;
+    }
+    .btn{
+        margin-left: 36%;
+    
+    
+    }
+    .contact-left{
+        padding-top: 150%;
+        position:absolute;
+        margin-top: -10%;
+        background:black;
+        width: 120%;
+        
+        margin-left: -7%;
+        padding-bottom: 10%;
+    }
+    .row form{
+        position: absolute;
+        margin-top: 90%;
+        margin-left: -113%;
+        width: 140%;
+        padding-right: -10px;
+    }
+    .submit{
+        
+        top: 50px;
+        right: -25%;
+    }
+    
+   
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        
+        <div class="head">
+            <h1>G</h1>
+            <h2>okulan.</h2>
+            <div class="hum">
+                <span class="step1"></span>
+                <span class="step2"></span>
+                <span class="step3"></span>
+
+            </div>
+            <img src="bars-solid.svg" alt="" onclick="closemenu()">
+            <ul id="sidemenu">
+                <img src="xmark-solid.svg" alt="" onclick="openmenu()">
+                <div><li><a href="#header" class="home">home</a></li></div>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <span></span>
+                 
+            </ul>
+           
+            
+        </div>
+        <div class="head-name">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Gokulan</span><br><nav>From India</nav></h1>
+
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <span>About Me</span>
+                    <p class="para">Web site is my passion in Python full-stack Developer.I have suuccessfully delivered numerous projects,ranging from web application to complex data analysis systems.Iam skilled in both front-end and back-end Development,and i thrive in fast-paced collaborative environment.enthusiastic front-end Developer with a solid foundation in HTML,CSS,and JavaScript.Quick learner with a passion for creating responsive and visually appealing web experiences.Enthusiastic back-end Developer with a solid foundation in framwork Django. Strong attention to detail and a commitment to staying current with industry trends and technologies.Eager to contribute to dynamic projects and collaborate with cross functional teams.</p>
+
+
+                    
+
+                </div>
+                <div class="about-col-2">
+                    
+                    <div class="tab-title">
+                        <p class="tab-links active-link" id="skills" onclick="skill()" ondblclick="skill2()">Skills</p>
+                        <p class="tab-links" onclick="education()" ondblclick="education2()">Education</p>
+                               
+                    </div>
+                    <div class="tab-content skill" id="show-skill">
+                        <li><span>Excellent Communication</span></li><br><br>
+                        
+                        <li><span>Python Full Stack Developer</span></li><br><br>
+                        <li><span>Web Developer</span> 
+                            <div class="sub"></div><li class="sub">Front End</li> 
+                            <li class="sub">Back End</li> 
+                            <li class="sub">DataBase</li>
+                        </li><br>
+
+                        <li><span>Program languages</span>
+
+                            
+                            <div class="sub"><li class="sub">HTML</li> 
+                            <li class="sub">CSS</li> 
+                            <li class="sub">JavaScript</li> 
+                            <li class="sub">Bootstrap</li> 
+                            <li class="sub">Django Framework</li> 
+                            <li class="sub">MYSQL</div></li>
+                               
+                        </li>
+                        
+                    </div>
+                    <div class="tab-content-education" id="show-education">
+                        <li><span>UG (2019-2023)</span><br>
+                        <li class="sub1">Bachelor Of Engineering (EEE)</li>
+                        <li class="sub1">Bharath Niketan Engineering College</li></li><br>
+                        <li><span>HSC (2018-2023)</span><br>
+                        <li class="sub1">ST Claret's Hr Sec School</li></li><br>
+                        <li><span>SSLC (2017-2018)</span><br>
+                        <li class="sub1">Kazhuvathevar Memorial Matric Hr Sec School</li></li>
+
+
+                        
+                     
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 >My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Web design to the textual,aural,or visual contant published on a website.Design means any creative element,for example,text,application,<br>images,archived e-mail messages,data,e-services,audio and video files,and so on. </p>
+                    <a href="https://www.browserstack.com/guide/web-development-in-python-guide#:~:text=Python%20web%20development%20refers%20to,ecosystem%20of%20libraries%20and%20frameworks.">Learn More</a>
+                </div>
+                
+            </div>
+            <div class="services-list2">
+                <div>
+                    <h2>&nbsp;&nbsp;&nbsp;Fron End Development</h2>
+                    <p>A front-end developer builds the front-end portion of websites and web applications—the part users see and interact with. A front-end developer creates websites and applications using web languages such as HTML, CSS, and JavaScript that allow users to access and interact with the site or app. </p>
+                    <a href="https://www.coursera.org/articles/front-end-developer">Learn More</a>
+                </div>
+                
+            </div>
+            <div class="services-list3">
+                <div>
+                    <h2>&nbsp;&nbsp;&nbsp;Back End Development</h2>
+                    <p>The server side of a web application is referred to as the backend in the context of web development. Python backend development entails using Python to create web applications' server-side code. Python includes web frameworks like Flask, Django, Pyramid, and Bottle. </p>
+                    <a href="https://www.coursera.org/articles/back-end-developer">Learn More</a>
+                </div>
+                
+            </div>
+            <a class="btn" href="https://yourstory.com/mystory/what-is-a-full-stack-python-developer">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="containers">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p> <img src="envelope-regular.svg" alt="">gokulankani20@gmail.com</p>
+                    <p><img src="phone-solid.svg" alt="">9361404204</p>
+                    <div class="social-icons">
+                       <a href="https://www.facebook.com/"><img src="facebook.svg" alt=""></a>
+                       <a href="https://twitter.com/i/flow/login"><img src="twitter.svg" alt=""></a>
+                       <a href="https://www.youtube.com/"><img src="youtube.svg" alt=""></a>
+                       <a href="https://in.linkedin.com/"><img src="linkedin.svg" alt=""></a>
+                       <a href="https://www.instagram.com/"><img src="instagram.svg" alt=""></a>
+
+
+
+                    </div>
+                    <a href="Gokulan resume.odt"><button class="bs ">Download CV</button></a>
+                </div>
+                <div class="contact-right"></div>
+                <form action="" onsubmit="sendemail(); reset(); return false;">
+                    <input type="text" id="name" placeholder="Your Name">
+                    <input type="email" id="email" placeholder="Your Email">
+                    <input type="number" id="number" placeholder="Mobile Number">
+                    <textarea id="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"  class="submit">Submit</button>
+                   
+
+                    
+                </form>
+                
+                
+                
+
+            </div>
+        </div>
+        <h2><img src="copyright-regular.svg" alt=""> Copyrights 2023-2024 by Gokulan Developer.All rights reserved.</h2>
+    </div>
+   
+        
+
+
+   
+<script>
+  
+  const second=document.getElementById("show-education");
+  function skill()
+  {
+   
+    document.getElementById("show-skill").style.display="block";
+    document.getElementById("show-education").style.display="none";
+
+   
+   
+  }
+  function skill2()
+  {
+   
+    document.getElementById("show-skill").style.display="none";
+   
+   
+  }
+  
+
+  function education()
+  {
+   
+    document.getElementById("show-education").style.display="block";
+    document.getElementById("show-skill").style.display="none"
+   
+   
+  }
+  function education2()
+  {
+   
+    document.getElementById("show-education").style.display="none";
+   
+   
+  }
+
+
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="-60%";
+    }
+    function closemenu(){
+        sidemenu.style.right="0";
+    }
+</script>
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendemail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "gokulan18developer@gmail.com",
+            Password : "********",
+            To : 'gokulankani20@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "new contact form enquiry",
+            Body : "Name:" +  document.getElementById("name").value + "<br> Email:" + document.getElementById("email").value "<br> phone no:" + document.getElementById("number").value "<br> Message:" + document.getElementById("Message").value
+
+        }).then(
+        message => alert(message)
+        );
+
+    }
+</script>
+    
+   
+</body>
+</html>
